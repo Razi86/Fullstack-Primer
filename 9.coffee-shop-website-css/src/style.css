@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(244,253,255);
+    background: linear-gradient(90deg, rgba(244,253,255,1) 0%, rgba(230,255,248,1) 48%, rgba(240,241,255,0.8711134111847865) 100%);
+}
+
+nav{
+    margin: 1rem;
+}
+
+nav h1{
+   float: left;
+
+}
+
+nav ul{
+    margin: 1rem;
+    list-style-type: none;
+    float: right;
+    display: flex;
+}
+
+nav a{
+    margin: 1rem;
+    padding: 8px 5px;
+    text-decoration: none;
+    background-color: blue;
+    border-radius: 5px;
+    min-width: 80px;
+    color: whitesmoke;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+header{
+    text-align: center;
+    margin: 1rem auto;
+}
+
+h1{
+    margin-bottom: 1rem;
+    color: #052ca5;
+}
+
+header p{
+    font-size: 1.2rem;
+    color: #5e72af;
+}
+
+main {
+    margin: 2rem 4rem;
+}
+
+section {
+    margin-bottom: 3rem ;
+}
+
+h2{
+    color: #0036de;
+}
+
+section p {
+    text-align: justify;
+}
+
+section li {
+    margin: .5rem;
+}
+
+img{
+    border-radius: 8px;
+    aspect-ratio: 1;
+    border: 1px solid #6ea3ff;
+    margin: 6px auto;
+    box-shadow: 0px 1px 3px #6ea3ff;
+    object-fit: cover;
+}
+
+form div{
+    margin: 1rem;
+}
+
+label{
+    font-size: .9rem;
+}
+
+button{
+    border-radius: 5px;
+    background-color: #2d60ff;
+    padding: 6px;
+    color: wheat;
+    border: 1px solid blue;
+    font-size: .9rem;
+    margin-left: 5rem;
+    box-shadow: 0px 1px 2px #1268fe;
+}
+
+footer{
+    text-align: center;
+    margin: 1rem auto;
+    font-size: .8rem;
+    color: #595dff;
+}
