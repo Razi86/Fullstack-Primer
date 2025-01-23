@@ -12,28 +12,33 @@ body{
 
 nav{
     margin: 1rem;
-}
-
-nav h1{
-   float: left;
-
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav ul{
-    margin: 1rem;
     list-style-type: none;
-    float: right;
     display: flex;
 }
 
-nav a{
-    margin: 1rem;
+nav li{
+    margin: 0 1rem;
     padding: 8px 5px;
-    text-decoration: none;
     background-color: blue;
     border-radius: 5px;
-    min-width: 80px;
+    min-width: 90px;
+    text-align: center;
+    line-height: 1.8rem;
+    cursor: pointer;
+}
+
+nav li a{
     color: whitesmoke;
+}
+
+nav a{
+    text-decoration: none;
 }
 
 .clearfix::after{
@@ -48,7 +53,6 @@ header{
 }
 
 h1{
-    margin-bottom: 1rem;
     color: #052ca5;
 }
 
@@ -84,6 +88,9 @@ img{
     margin: 6px auto;
     box-shadow: 0px 1px 3px #6ea3ff;
     object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 form div{
@@ -110,4 +117,39 @@ footer{
     margin: 1rem auto;
     font-size: .8rem;
     color: #595dff;
+}
+
+@media only screen and (max-width: 768px) {
+
+    body{
+        font-size: .8rem;
+    }
+
+    nav{
+        margin: .5rem;
+    }
+    
+    nav li{
+        margin: 0 .5rem;
+        padding: 3px 2px;
+        min-width: 65px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+    nav{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    nav ul{
+        margin-top: 15px;
+    }
+    
+    nav li{
+        margin: 0 .5rem;
+        padding: 3px 2px;
+        min-width: 65px;
+    }
 }
